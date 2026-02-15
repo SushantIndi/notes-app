@@ -90,3 +90,73 @@ button:hover {
 .delete-btn {
   background: #ff4d4f;
 }
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 25px 15px;
+  }
+
+  .header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .notes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 20px 12px;
+  }
+
+  .header {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  input,
+  textarea,
+  button {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .notes-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .note-title {
+    font-size: 16px;
+  }
+
+  .note-content {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .app-container {
+    max-width: 1200px;
+  }
+
+  .notes-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
