@@ -1,16 +1,134 @@
-# React + Vite
+# 📝 Notes App with Tags & Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, dark-themed notes application built with **React** that allows users to create, organize, search, and filter notes using tags.
+Designed as a clean, beginner-friendly project to demonstrate core frontend concepts.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+https://sushantindi.github.io/notes-app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+* 📝 Create notes with title and content
+* 🏷️ Add multiple tags to each note
+* 🔍 Search notes by title or content
+* 🎯 Filter notes by tags
+* 💾 Data stored in browser (localStorage)
+* 🌙 Dark modern UI
+* 📱 Responsive layout
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+* **React (Vite)**
+* JavaScript (ES6+)
+* CSS (custom styling)
+* localStorage (for persistence)
+
+---
+
+## 📁 Project Structure
+
+notes-app/
+│
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── NoteEditor.jsx
+│   │   ├── NoteList.jsx
+│   │   ├── NoteCard.jsx
+│   │   ├── SearchBar.jsx
+│   │   └── TagFilter.jsx
+│   │
+│   ├── context/
+│   │   └── NotesContext.jsx
+│   │
+│   ├── hooks/
+│   │   └── useLocalStorage.js
+│   │
+│   ├── pages/
+│   │   └── Home.jsx
+│   │
+│   ├── styles/
+│   │   └── app.css
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+└── README.md
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+bash
+git clone https://github.com/SushantIndi/notes-app.git
+
+### 2️⃣ Navigate into the project
+
+bash
+cd notes-app
+
+### 3️⃣ Install dependencies
+
+bash
+npm install
+
+### 4️⃣ Run the development server
+
+npm run dev
+
+Open in browser:
+
+http://localhost:5173
+
+---
+
+## 📦 Build for production
+
+npm run build
+
+---
+
+## 📤 Deployment
+### Deploy on GitHub Pages
+
+npm run deploy
+
+---
+
+## 🎯 Learning Objectives
+
+This project demonstrates:
+
+* React component structure
+* State management with Context API
+* Custom hooks
+* Search and filter logic
+* Local storage persistence
+* Clean folder architecture
+
+---
+
+## 👨‍💻 Author
+
+Sushant Indi
+Frontend Developer (Fresher)
+
+* GitHub: https://github.com/SushantIndi
+* LinkedIn: https://www.linkedin.com/in/sushant-indi/
+
+---
+
+## ⭐ If you like this project
+
+Give it a star on GitHub and share it!
